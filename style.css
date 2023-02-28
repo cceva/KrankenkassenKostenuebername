@@ -39,7 +39,7 @@ tbody tr:hover {
   background: #3790A6;
 }
 .fixed_header{
-  width: 900px;
+  width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
 }
@@ -57,4 +57,39 @@ tbody tr:hover {
   padding: 5px;
   text-align: left;
   width: 200px;
+}
+
+/* For mobile devices: */
+@media only screen and (max-width: 600px) {
+  /* Make the table full width */
+  table {
+    width: 100%;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead {
+    display: none;
+  }
+
+  /* Make each table row full width and stack them vertically */
+  tr {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  /* Add borders to each table data/cell */
+  td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  /* Add padding to each table data/cell */
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
