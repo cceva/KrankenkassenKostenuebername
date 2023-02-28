@@ -1,0 +1,33 @@
+
+table#foobar-table thead {
+ position: sticky;
+}
+
+table#foobar-table thead {
+ inset-block-start: 0;
+}
+
+table#foobar-table,
+table#foobar-table > thead > tr > th,
+table#foobar-table > tbody > tr > td {
+ border: Solid 1px #888888;
+ padding: 5px;
+ color: #000000;
+}
+
+table#foobar-table > thead > tr {
+ background-color: rgba(255,174,94,0.8);
+}
+
+table#foobar-table > tbody > tr:nth-child(even) {
+ background-color: #FFFFFF;
+}
+
+table#foobar-table > tbody > tr:nth-child(odd) {
+ background-color: #FFD2A6;
+}
+
+#foobar-table,
+p#eingabe {
+ margin-left: 50px;
+}
