@@ -1,34 +1,43 @@
 
-table#KK_Table thead {
- position: sticky;
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-table#KK_Table thead {
- inset-block-start: 0;
+body {
+  background: #92C2CE;
+  font-family: 'Averta', sans-serif;
 }
-
-table#KK_Table,
-table#KK_Table > thead > tr > th,
-table#KK_Table > tbody > tr > td {
- border: Solid 1px #888888;
- padding: 5px;
- color: #000000;
+table {
+  background: #012B39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
 }
-
-table#KK_Table > thead > tr {
- background-color: rgba(255,174,94,0.8);
+th {
+  border-bottom: 1px solid #364043;
+  color: #9b9b60;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
 }
-
-table#KK_Table > tbody > tr:nth-child(even) {
- background-color: #FFFFFF;
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
 }
-
-table#KK_Table > tbody > tr:nth-child(odd) {
- background-color: #FFD2A6;
+.disabled td {
+  color: #fff;
 }
-
-#KK_Table,
-p#eingabe {
- margin-left: 50px;
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #3790A6;
 }
 
