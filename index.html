@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Meine Website</title>
+  <title>Kursübersicht</title>
 </head>
 <body>
-  <h1>Willkommen auf meiner Website</h1>
+  <style>
+    table#foobar-table thead {
+     position: sticky;
+    }
+    
+    table#foobar-table thead {
+     inset-block-start: 0;
+    }
+    
+    table#foobar-table,
+    table#foobar-table > thead > tr > th,
+    table#foobar-table > tbody > tr > td {
+     border: Solid 1px #888888;
+     padding: 5px;
+     color: #000000;
+    }
+    
+    table#foobar-table > thead > tr {
+     background-color: rgba(255,174,94,0.8);
+    }
+    
+    table#foobar-table > tbody > tr:nth-child(even) {
+     background-color: #FFFFFF;
+    }
+    
+    table#foobar-table > tbody > tr:nth-child(odd) {
+     background-color: #FFD2A6;
+    }
+    
+    #foobar-table,
+    p#eingabe {
+     margin-left: 50px;
+    }
+    </style>
+    
+    <p id="eingabe">
+     <label>Filter: <input type="search" class="filter-table" data-for="#foobar-table" autofocus="autofocus"></label>
+    </p> 
+  <h1>Kostenübernahme der Krankenkassen</h1>
   <p>Hier findest du alle Informationen, die du brauchst.</p>
   <table id="KK_Table">
     <thead>
@@ -17,29 +55,788 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>WMF BKK</td>
-        <td>2 Kurse</td>
-        <td>80 % </td>
-        <td>400€ </td>
-        <td>Sonstiges </td>
+      <td>WMF BKK</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>400</td>
+      <td>200€ pro Kurs</td>
       </tr>
       <tr>
-        <td>WMF BKK</td>
-        <td>2 Kurse</td>
-        <td>80 % </td>
-        <td>400€ </td>
-        <td>Sonstiges </td>
+      <td>Wieland BKK</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs</td>
       </tr>
       <tr>
-        <td>WMF BKK</td>
-        <td>2 Kurse</td>
-        <td>80 % </td>
-        <td>400€ </td>
-        <td>Sonstiges </td>
+      <td>Viactiv Krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>200</td>
+      <td>200€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>Tui BKK</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>155</td>
+      <td>max. 155€ pro Kalnenderjahr</td>
+      </tr>
+      <tr>
+      <td>Techniker Krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>80% (100% bei Online-Kursen)</td>
+      <td>150</td>
+      <td>max.75€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>TBK</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>400</td>
+      <td>max. 200€ pro Kurs; fusioniert mit BKK VBU</td>
+      </tr>
+      <tr>
+      <td>Südzucker-BKK</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>260</td>
+      <td>max. 130€ pro Kurs, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>SKD BKK</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>250</td>
+      <td>125€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>SIEMAG BKK</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>300</td>
+      <td>max. 150€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>Securvita Krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>200</td>
+      <td>max. 100€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>Schwenninger Krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>250</td>
+      <td>max. 125€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>SBK</td>
+      <td>2 Kurse</td>
+      <td>0.75</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>Salus BKK</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>200</td>
+      <td>max. 100€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>R+V Betriebskrankenkasse</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>pronova BKK</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>150</td>
+      <td>max. 150€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>Novitas BKK</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>300</td>
+      <td>max. 300€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>mhplus Krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>140</td>
+      <td>max. 70€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>Landwirtschaftliche Krankenkasse (LKK)</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>keine Angaben</td>
+      <td>keine Angaben</td>
+      </tr>
+      <tr>
+      <td>Krones BKK</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>180</td>
+      <td>180€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>Knappschaft</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>KKH Kaufmännische Krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>IKK Südwest</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>150</td>
+      <td>max. 75€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>IKK Nord</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>180</td>
+      <td>max. 180€ pro Kalenderjahr, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>IKK gesund plus</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>IKK classic</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>180</td>
+      <td>max. 90€ pro Kurs, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>IKK Brandenburg und Berlin</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>150</td>
+      <td>max. 75€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>hkk Krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>200</td>
+      <td>max. 100€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>HEK – Hanseatische Krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>500</td>
+      <td>max. 250€ pro Kurs falls dieser mehr als 300€ kostet</td>
+      </tr>
+      <tr>
+      <td>Heimat Krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>160</td>
+      <td>max. 160€ pro Kalenderjahr, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>Ernst &amp; Young BKK</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>200</td>
+      <td>max. 200€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>energie-BKK</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>320</td>
+      <td>max. 160€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>Debeka BKK</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>150</td>
+      <td>max. 150€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>DAK Gesundheit</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>150</td>
+      <td>max. 75€ pro Kurs, für Minderjährige 100% (75€ pro Kurs)</td>
+      </tr>
+      <tr>
+      <td>Daimler BKK</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>300</td>
+      <td>max. 150€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>Continentale BKK</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>250</td>
+      <td>max. 250€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>Brandenburgische BKK</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>400</td>
+      <td>max. 200€ pro Kurs; fusioniert mit BKK VBU</td>
+      </tr>
+      <tr>
+      <td>Bosch BKK</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BMW BKK</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>200</td>
+      <td>max. 100€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK24</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>250</td>
+      <td>max. 125€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK ZF &amp; Partner</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>160</td>
+      <td>max. 160€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK Würth</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>250</td>
+      <td>max. 135€ für den ersten, dann für den zweiten 115€</td>
+      </tr>
+      <tr>
+      <td>BKK Wirtschaft &amp; Finanzen</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>500</td>
+      <td>max. 500€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK Werra-Meissner</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>150</td>
+      <td>max. 75€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Voralb Heller *INDEX* LEUZE</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>155</td>
+      <td>max. 155€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK VerbundPlus</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>300</td>
+      <td>max. 150€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK VDN</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>200</td>
+      <td>max. 100€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK VBU</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>400</td>
+      <td>max. 200€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Textilgruppe Hof</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>180</td>
+      <td>max. 90€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Technoform</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>150</td>
+      <td>max. 150€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK Stadt Augsburg</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>200</td>
+      <td>max. 200€ pro Kalenderjahr, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>BKK Scheufelen</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>310</td>
+      <td>max. 155€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK SBH</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>250</td>
+      <td>max. 250€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK Salzgitter</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>155</td>
+      <td>max. 155€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK RWE</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>160</td>
+      <td>max. 160€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK Rieker.Ricosta.Weisser</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>200</td>
+      <td>max. 200€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK PwC</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>300</td>
+      <td>Erstattungsbetrag je Kalenderjahr 300€, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>BKK Public</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>155</td>
+      <td>max. 155€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK ProVita</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>208</td>
+      <td>max. 208€ pro Kalenderjahr (2019)</td>
+      </tr>
+      <tr>
+      <td>BKK Pfalz</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>300</td>
+      <td>max. 150€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Pfaff</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>300</td>
+      <td>max. 150€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK MTU Friedrichshafen GmbH</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>240</td>
+      <td>max. 120€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Mobil Oil</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>200</td>
+      <td>max. 200€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK Miele</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>250</td>
+      <td>max. 250€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK Merck</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>200</td>
+      <td>max. 100€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Melitta Plus</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>240</td>
+      <td>max . 120€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Mahle</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>150</td>
+      <td>75€ pro Kurs, 2mal der gleiche möglich</td>
+      </tr>
+      <tr>
+      <td>BKK Linde</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>200</td>
+      <td>100€ pro Kurs, 2mal der gleiche möglich</td>
+      </tr>
+      <tr>
+      <td>BKK KBA</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>200</td>
+      <td>max. 100€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Karl Mayer</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>120</td>
+      <td>max. 60€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK HMR</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>320</td>
+      <td>max. 160€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Herkules</td>
+      <td>2 Kurse</td>
+      <td>0.95</td>
+      <td>200</td>
+      <td>max. 100€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Henschel plus</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>250</td>
+      <td>max. 250€ pro Kalenderjahr; fusioniert mit Continentale BKK</td>
+      </tr>
+      <tr>
+      <td>BKK Groz-Beckert</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Grillo-Werke AG</td>
+      <td>2 Kurse</td>
+      <td>keine Auskunft</td>
+      <td>keine Auskunft</td>
+      <td>keine Auskunft</td>
+      </tr>
+      <tr>
+      <td>BKK Gildemeister Seidensticker</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>150</td>
+      <td>max. 75€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Freudenberg</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>200</td>
+      <td>max. 200€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK firmus</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>206</td>
+      <td>max.103€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Farber-Castell &amp; Partner</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>150</td>
+      <td>max. 150€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK exklusiv</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>400</td>
+      <td>max. 200€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK EWE</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>300</td>
+      <td>max. 150€ pro Kurs, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>BKK evm</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>150</td>
+      <td>max. 150€ im Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK EUREGIO</td>
+      <td>2 Kurse</td>
+      <td>80-100%</td>
+      <td>200</td>
+      <td>100€ pro Kurs, 2mal der gleiche möglich, mind.80% grundsätzlich 100%</td>
+      </tr>
+      <tr>
+      <td>BKK DürkoppAdler</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>320</td>
+      <td>max. 160€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Diakonie</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>200</td>
+      <td>max. 100€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK Deutsche Bank AG</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>150</td>
+      <td>max.75€ pro Kurs, mit Befreiungskarte werden 90% der Kosten erstattet</td>
+      </tr>
+      <tr>
+      <td>BKK BPW Bergische Achsen KG</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>BKK B. Braun</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>160</td>
+      <td>max. 160€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK Akzo Nobel Bayern</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>300</td>
+      <td>max. 300€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BKK aesculap</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>160</td>
+      <td>max. 160€ pro Kalenderjahr; fusioniert mit BKK Braun</td>
+      </tr>
+      <tr>
+      <td>BKK Achenbach Buschhütten</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>200</td>
+      <td>max. 200€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>BIG direkt gesund</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>240</td>
+      <td>max. 120€ pro Kurs, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>Bertelsmann BKK</td>
+      <td>2 Kurse</td>
+      <td>0.85</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>Bergische Krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>500</td>
+      <td>max. 250€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>Barmer</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>150</td>
+      <td>max. 75€ pro Kurs, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>Bahn-BKK</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>300</td>
+      <td>max. 150€ pro Kurs, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>Audi BKK</td>
+      <td>2 Kurse</td>
+      <td>0.95</td>
+      <td>180</td>
+      <td>max. 90€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>atlas BKK ahlmann</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>300</td>
+      <td>max. 150€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>AOK Sachsen-Anhalt</td>
+      <td>2 Kurse</td>
+      <td>0.9</td>
+      <td>160</td>
+      <td>max. 80€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>AOK Rheinland/ Hamburg</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>150</td>
+      <td>max. 75€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>AOK Rheinland-Pfalz/ Saarland</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>200</td>
+      <td>max. 200€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>AOK Plus</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>150</td>
+      <td>max. 150€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>AOK Nordwest</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>500</td>
+      <td>max. 250€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>AOK Nordost</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>170</td>
+      <td>max. 170€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>AOK Niedersachsen</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>150</td>
+      <td>max. 150€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>AOK Hessen</td>
+      <td>2 Kurse</td>
+      <td>siehe ,,Sonstiges“</td>
+      <td>300</td>
+      <td>max. 150€ pro Kurs, keine prozentuale Erstattung</td>
+      </tr>
+      <tr>
+      <td>AOK Bremen/Bremerhafen</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>220</td>
+      <td>max. 110€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>AOK Bayern</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>150</td>
+      <td>max. 75€ pro Kurs</td>
+      </tr>
+      <tr>
+      <td>AOK Baden-Württemberg</td>
+      <td>2 Kurse</td>
+      <td>0.8</td>
+      <td>100</td>
+      <td>max. 100€ pro Kalenderjahr</td>
+      </tr>
+      <tr>
+      <td>actimonda krankenkasse</td>
+      <td>2 Kurse</td>
+      <td>1</td>
+      <td>300</td>
+      <td>Kostenübernahme in voller Höhe bis 150€ pro Kurs, 2mal der gleiche möglich</td>
       </tr>
     </tbody>
   </table>
-  
+<script>
+document.querySelectorAll(".filter-table").forEach(function (input) {
+  var table = document.querySelector(input.dataset.for);
+  var rows = table.querySelectorAll("tbody tr");
+  input.addEventListener("input", () => {
+    rows.forEach(function (tr) {
+      if (input.value.length > 0) {
+        if (input.value[0] == input.value[0].toUpperCase()) {
+          tr.hidden = !tr.textContent.includes(input.value);
+        } else {
+          tr.hidden = !tr.textContent.toLowerCase().includes(input.value.toLowerCase());
+        }
+      } else {
+        tr.hidden = !tr.textContent.includes(input.value);
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
