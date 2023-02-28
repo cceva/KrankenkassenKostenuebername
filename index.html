@@ -2,49 +2,16 @@
 <html>
 <head>
   <title>Kursübersicht</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <style>
-    table#KK_Table thead {
-     position: sticky;
-    }
-    
-    table#KK_Table thead {
-     inset-block-start: 0;
-    }
-    
-    table#KK_Table,
-    table#KK_Table > thead > tr > th,
-    table#KK_Table > tbody > tr > td {
-     border: Solid 1px #888888;
-     padding: 5px;
-     color: #000000;
-    }
-    
-    table#KK_Table > thead > tr {
-     background-color: rgba(255,174,94,0.8);
-    }
-    
-    table#KK_Table > tbody > tr:nth-child(even) {
-     background-color: #FFFFFF;
-    }
-    
-    table#KK_Table > tbody > tr:nth-child(odd) {
-     background-color: #FFD2A6;
-    }
-    
-    #KK_Table,
-    p#eingabe {
-     margin-left: 50px;
-    }
-    </style>
     <h1>Kostenübernahme der Krankenkassen</h1>
     <p>Hier findest du alle Informationen, die du brauchst.</p>
     <p id="eingabe">
      <label>Krankenkassen Filter: <input type="search" class="filter-table" data-for="#KK_Table" autofocus="autofocus"></label>
     </p> 
  
-  <table id="KK_Table">
+  <table id="KK_Table", class = "fixed_header">
     <thead>
       <tr>
         <th>Name</th>
